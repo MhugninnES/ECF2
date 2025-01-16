@@ -15,6 +15,13 @@
     border-radius: 5px;
 }
 
+@mixin centerItem($direction:row){
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
 //style
 *{
     margin:0;
@@ -93,7 +100,7 @@ header{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin:5% 20% 0 20%;
+        margin:5% 20% 8% 20%;
         padding: 0;
 
         .first-section-text{
@@ -151,6 +158,20 @@ header{
 main{
     .second-section{
         background-color: #f9f9ff;
+
+        h2{
+            @include centerItem(row);
+        }
+
+        .card-carousel{
+            img{
+                border: 1px solid #57007B;
+                border-radius: 100%;
+                width:32px;
+                height: 32px;
+                padding: 10px;
+            }
+        }
     }
 }
 
