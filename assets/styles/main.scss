@@ -1,0 +1,140 @@
+@import "variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Inspiration&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Inspiration&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+//mixins
+@mixin baseColorNoDeco(){
+    text-decoration: none;
+    color:$base-text-color;
+}
+
+@mixin basicButton(){
+    border: solid 1px $base-text-color;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+//style
+body{
+    font-family:'Inter', sans-serif;
+    font-size: 25px;
+    margin: 0;
+
+    p{
+        margin: 0;
+    }
+
+    h1{
+        margin:0;
+    }
+}
+
+header{
+    nav{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-height:80px;
+        width: Fixed (1,440px);
+        height: Hug (79px);
+        padding: 10px 0px 10px 0px;
+        gap: 0px;
+        opacity: 0px;
+        box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.08);
+
+        .logo-text-site{
+            @include baseColorNoDeco();
+
+            display:flex;
+            justify-content: flex-start;
+            align-items:center;
+            gap: 10px;
+            margin: 0 0 0 20px;
+            span{
+                font-family: "Inspiration", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+        }
+
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap:50px;
+            a{
+                @include baseColorNoDeco();
+            }
+        }
+
+        .contact-us-button{
+            @include baseColorNoDeco();
+            @include basicButton();
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px 20px 5px 0;
+            height: 50px;
+            width:124px;
+            padding: 0 25px;
+            background: linear-gradient(225deg, #6675F7 0%, #57007B 100%);
+        }
+    }
+
+    .first-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin:5% 20% 0 20%;
+        padding: 0;
+
+        .first-section-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 75px;
+
+            h1{
+                font-size: 46px;
+                font-weight:300;
+
+                .product-gradient{
+                    display: inline-block
+                    background: linear-gradient(180deg, #DE4396 0%, rgba(13, 28, 159, 0) 100%);
+                }
+            }
+
+            p{
+                font-size: 16px;
+            }
+
+            .button-call-to-action{
+                @include baseColorNoDeco();
+                @include basicButton();
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #3d63ea;
+                padding: 16px 20px 16px 20px;
+                font-size: 14px;
+            }
+
+        }
+    }
+}
+
+main{
+
+}
+
+footer{
+
+}
+
+
+
+//responsive
