@@ -1,17 +1,131 @@
-/* Error: expected ";".
- *     ,
- * 107 |                     background: linear-gradient(180deg, #DE4396 0%, rgba(13, 28, 159, 0) 100%);
- *     |                               ^
- *     '
- *   main.scss 107:31  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ";".\a     \2577 \a 107 \2502                      background: linear-gradient(180deg, #DE4396 0%, rgba(13, 28, 159, 0) 100%);\d\a     \2502                                ^\a     \2575 \a   main.scss 107:31  root stylesheet';
+@import url("https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Inspiration&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Inspiration&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  margin: 0;
+}
+body p {
+  margin: 0;
+}
+body h1 {
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-height: 80px;
+  width: Fixed 1, 440px;
+  height: Hug 79px;
+  padding: 10px 0px 10px 0px;
+  gap: 0px;
+  opacity: 0px;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.08);
+}
+header nav .logo-text-site {
+  text-decoration: none;
+  color: #2b2b2b;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 0 20px;
+}
+header nav .logo-text-site span {
+  font-family: "Inspiration", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+header nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+header nav div a {
+  text-decoration: none;
+  color: #2b2b2b;
+}
+header nav .contact-us-button {
+  text-decoration: none;
+  color: #2b2b2b;
+  border: solid 1px #2b2b2b;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 20px 5px 0;
+  height: 50px;
+  width: 124px;
+  padding: 0 25px;
+  background: linear-gradient(225deg, #6675F7 0%, #57007B 100%);
+}
+header .first-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5% 20% 0 20%;
+  padding: 0;
+}
+header .first-section .first-section-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 75px;
+}
+header .first-section .first-section-text h1 {
+  font-size: 46px;
+  font-weight: 300;
+}
+header .first-section .first-section-text h1 #product-gradient {
+  background: linear-gradient(180deg, #DE4396 0%, rgba(13, 28, 159, 0.4901960784) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header .first-section .first-section-text h1 #gradient-team {
+  background: linear-gradient(225deg, #F7666F 0%, #406AFF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header .first-section .first-section-text p {
+  font-size: 16px;
+}
+header .first-section .first-section-text .button-call-to-action {
+  text-decoration: none;
+  color: #2b2b2b;
+  border: solid 1px #2b2b2b;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3d63ea;
+  padding: 16px 20px 16px 20px;
+  font-size: 14px;
+}
+header .half-circle {
+  position: absolute;
+  left: 34%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+main .second-section {
+  background-color: #f9f9ff;
+}
+
+/*# sourceMappingURL=style.css.map */
