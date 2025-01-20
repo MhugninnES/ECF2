@@ -253,4 +253,8 @@ main .third-section .arrow-right-selected {
   margin: 0 80px 30px 0;
 }
 
+footer h6 {
+  font-family: "Courier New", Courier, monospace;
+}
+
 /*# sourceMappingURL=style.css.map */
