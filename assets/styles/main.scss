@@ -29,6 +29,14 @@
     -webkit-text-fill-color: transparent;
 }
 
+@mixin halfCirclePosition($top, $left){
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: -1;
+    top: $top;
+    left: $left;
+}
+
 //style
 *{
     margin:0;
@@ -47,6 +55,8 @@ body{
     h1{
         margin:0;
     }
+
+
 }
 
 header{
@@ -216,6 +226,82 @@ main{
                 position:absolute;
                 right: 8%;
             }
+        }
+    }
+
+    .third-section{
+        padding-top: 160px;
+        position:relative;
+
+        .half-circle{
+            @include halfCirclePosition(0, 18%);
+        }
+
+        .first-part{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 12% 0 12%;
+            gap: 16%;
+            .third-section_text{
+                // margin: 0 0 0 10%;
+                line-height: 36px;
+                align-self: flex-start;
+                #deco-line{
+                    margin: 0 0 20px 0;
+                }
+
+                h2{
+                    font-size: 35px;
+                    font-weight: 300;
+                    margin: 0 0 30px 0;
+                    max-width:450px;
+                }
+
+                p{
+                    letter-spacing: 2px;
+                    font-size: 18px;
+                    color: #718096;
+                }
+
+                .button-see-more{
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+                    margin: 50px 0 0 0;
+                    
+                    a{
+                        @include baseColorNoDeco();
+                        color: #57007B;
+                    }
+                }
+
+                .colored-inside-text{
+                    @include gradientText(linear-gradient(225deg, #F76680 0%, #57007B 100%));
+                }
+            }
+
+            #false-video{
+                margin: 0 0 12% 0;
+            }
+        }
+
+        .second-part{
+            margin: 0 0 0 12%;
+
+            .second-part_text{
+                img{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .arrow-right-selected{
+            display:flex;
+            justify-content: flex-end;
+            gap: 20px;
+            margin: 0 80px 30px 0;
         }
     }
 }
