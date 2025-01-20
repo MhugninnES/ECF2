@@ -22,6 +22,13 @@
     flex-direction: $direction;
 }
 
+@mixin gradientText($gradient){
+    background:$gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 //style
 *{
     margin:0;
@@ -115,17 +122,11 @@ header{
                 font-weight:300;
 
                 #product-gradient{
-                    background:linear-gradient(180deg, #DE4396 0%, #0d1c9f7d 100%);
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                    @include gradientText(linear-gradient(180deg, #DE4396 0%, #0d1c9f7d 100%));
                 }
 
                 #gradient-team{
-                    background: linear-gradient(225deg, #F7666F 0%, #406AFF 100%);
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                    @include gradientText(linear-gradient(225deg, #F7666F 0%, #406AFF 100%));
                 }
             }
 
@@ -158,18 +159,62 @@ header{
 main{
     .second-section{
         background-color: #f9f9ff;
+        padding-bottom: 60px;
 
         h2{
             @include centerItem(row);
         }
+        
+        .card-agencement{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 2% 2% 2%;
 
-        .card-carousel{
-            img{
-                border: 1px solid #57007B;
-                border-radius: 100%;
-                width:32px;
-                height: 32px;
-                padding: 10px;
+            .card-carousel:hover{
+                transform: translateY(30px);
+            }
+
+            .card-carousel{
+                
+                width: 333px;
+                height: 280px;
+                background-color: white;
+                border-radius: 10px;
+                transition: transform 0.2s ease-in-out;
+
+                .card-title-image-text{
+                    margin: 38px 16px;
+                }
+
+                h3{
+                    font-size: 20px;
+                    @include gradientText(linear-gradient(225deg, #F76680 0%, #57007B 100%));
+                    margin-bottom: 20px;
+                }
+
+                p{
+                    font-size:14px; 
+                }
+
+                img{
+                    border: 1px solid violet;
+                    border-radius: 100%;
+                    width:32px;
+                    height: 32px;
+                    padding: 10px;
+                    margin-bottom: 14px;
+                }
+            }
+        }
+
+        .carousel-node-pages{
+            @include centerItem(row);
+            gap: 10px;
+
+            #slider-carousel{
+                position:absolute;
+                right: 8%;
             }
         }
     }

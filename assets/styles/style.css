@@ -126,6 +126,7 @@ header .half-circle {
 
 main .second-section {
   background-color: #f9f9ff;
+  padding-bottom: 60px;
 }
 main .second-section h2 {
   display: flex;
@@ -133,12 +134,54 @@ main .second-section h2 {
   align-items: center;
   flex-direction: row;
 }
-main .second-section .card-carousel img {
-  border: 1px solid #57007B;
+main .second-section .card-agencement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 2% 2% 2%;
+}
+main .second-section .card-agencement .card-carousel:hover {
+  transform: translateY(30px);
+}
+main .second-section .card-agencement .card-carousel {
+  width: 333px;
+  height: 280px;
+  background-color: white;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+main .second-section .card-agencement .card-carousel .card-title-image-text {
+  margin: 38px 16px;
+}
+main .second-section .card-agencement .card-carousel h3 {
+  font-size: 20px;
+  background: linear-gradient(225deg, #F76680 0%, #57007B 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+main .second-section .card-agencement .card-carousel p {
+  font-size: 14px;
+}
+main .second-section .card-agencement .card-carousel img {
+  border: 1px solid violet;
   border-radius: 100%;
   width: 32px;
   height: 32px;
   padding: 10px;
+  margin-bottom: 14px;
+}
+main .second-section .carousel-node-pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+main .second-section .carousel-node-pages #slider-carousel {
+  position: absolute;
+  right: 8%;
 }
 
 /*# sourceMappingURL=style.css.map */
