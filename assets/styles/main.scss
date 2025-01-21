@@ -313,6 +313,84 @@ main{
         overflow-x: scroll;
         padding: 60px 0 60px 0;
     }
+
+    .customers-review-section{
+        @include centerItem(row);
+        padding: 10% 0 10% 0;
+        .content-reviews-grouping{
+            @include centerItem(column);
+            margin: 0 16% 0 16%;
+            width: 100%;
+
+            .text-review-section{
+                margin: 0 10% 4% 10%;
+                position: relative;
+
+                .title-review-section{
+                    @include centerItem(column);
+                    margin-bottom: 50px;
+                    img{
+                        margin-bottom: 20px;
+                    }
+                    h3{
+                        font-size: 35px;
+                        line-height: 50px;
+                        text-align: center;
+                        font-weight: 300;
+                    }
+                }
+                #left-drop{
+                    position: absolute;
+                    left:0px;
+                }
+
+                p{
+                    margin: 0 10% 0 10%;
+                    line-height: 36px;
+                    text-align: center;
+                    font-size: 18px;
+                    max-width: 800px;
+                }
+
+                #right-drop{
+                    position:absolute;
+                    right : 0px;
+                }
+            }
+
+            .customers-reviews{
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row;
+                width: 100%;
+
+                .customers{
+                    @include centerItem(column);
+                    width:16%;
+                    height: 200px;
+
+                    .stars{
+                        margin: 0 0 10px 0;
+                    }
+                    h6{
+                        text-align: center;
+                    }
+                }
+
+                img{
+                    max-height: 100px;
+                }
+            }
+        }
+
+        #left-button-position{
+            margin-left: 4%
+        }
+        #right-button-position{
+            margin-right: 4%;
+        }
+    }
 }
 
 footer{

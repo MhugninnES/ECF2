@@ -260,6 +260,86 @@ main .partner-section {
   overflow-x: scroll;
   padding: 60px 0 60px 0;
 }
+main .customers-review-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 10% 0 10% 0;
+}
+main .customers-review-section .content-reviews-grouping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 16% 0 16%;
+  width: 100%;
+}
+main .customers-review-section .content-reviews-grouping .text-review-section {
+  margin: 0 10% 4% 10%;
+  position: relative;
+}
+main .customers-review-section .content-reviews-grouping .text-review-section .title-review-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+main .customers-review-section .content-reviews-grouping .text-review-section .title-review-section img {
+  margin-bottom: 20px;
+}
+main .customers-review-section .content-reviews-grouping .text-review-section .title-review-section h3 {
+  font-size: 35px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: 300;
+}
+main .customers-review-section .content-reviews-grouping .text-review-section #left-drop {
+  position: absolute;
+  left: 0px;
+}
+main .customers-review-section .content-reviews-grouping .text-review-section p {
+  margin: 0 10% 0 10%;
+  line-height: 36px;
+  text-align: center;
+  font-size: 18px;
+  max-width: 800px;
+}
+main .customers-review-section .content-reviews-grouping .text-review-section #right-drop {
+  position: absolute;
+  right: 0px;
+}
+main .customers-review-section .content-reviews-grouping .customers-reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+main .customers-review-section .content-reviews-grouping .customers-reviews .customers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 16%;
+  height: 200px;
+}
+main .customers-review-section .content-reviews-grouping .customers-reviews .customers .stars {
+  margin: 0 0 10px 0;
+}
+main .customers-review-section .content-reviews-grouping .customers-reviews .customers h6 {
+  text-align: center;
+}
+main .customers-review-section .content-reviews-grouping .customers-reviews img {
+  max-height: 100px;
+}
+main .customers-review-section #left-button-position {
+  margin-left: 4%;
+}
+main .customers-review-section #right-button-position {
+  margin-right: 4%;
+}
 
 footer h6 {
   font-family: "Courier New", Courier, monospace;
