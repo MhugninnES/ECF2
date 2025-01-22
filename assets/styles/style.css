@@ -125,12 +125,14 @@ main .second-section .card-agencement {
   flex-direction: row;
   justify-content: space-between;
   margin: 0 2% 2% 2%;
+  overflow-x: scroll;
 }
 main .second-section .card-agencement .card-carousel:hover {
   transform: translateY(30px);
 }
 main .second-section .card-agencement .card-carousel {
   width: 333px;
+  min-width: 300px;
   height: 280px;
   background-color: white;
   border-radius: 10px;
@@ -304,14 +306,16 @@ main .customers-review-section .content-reviews-grouping .customers-reviews {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  min-width: 250px;
   width: 100%;
+  overflow-x: scroll;
 }
 main .customers-review-section .content-reviews-grouping .customers-reviews .customers {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 16%;
+  width: 20%;
   height: 200px;
 }
 main .customers-review-section .content-reviews-grouping .customers-reviews .customers .stars {
@@ -322,6 +326,9 @@ main .customers-review-section .content-reviews-grouping .customers-reviews .cus
 }
 main .customers-review-section .content-reviews-grouping .customers-reviews img {
   max-height: 100px;
+}
+main .customers-review-section .content-reviews-grouping .customers-reviews::-webkit-scrollbar {
+  display: none;
 }
 main .customers-review-section #left-button-position {
   margin-left: 4%;
@@ -623,13 +630,74 @@ footer span {
 }
 
 @media screen and (max-width: 1023px) {
+  header nav {
+    display: none;
+  }
   header .first-section {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
-  header .first-section p {
+  header .first-section .first-section-text {
+    justify-content: center;
+    align-items: center;
+  }
+  header .first-section .first-section-text h1 {
+    text-align: center;
+  }
+  header .first-section .first-section-text p {
     text-align: center;
     font-size: 20px;
+  }
+  main .second-section h2 {
+    padding: 2% 0 2% 0;
+  }
+  main .second-section .card-agencement {
+    gap: 20px;
+  }
+  main .third-section .first-part {
+    flex-direction: column;
+    margin: 0;
+  }
+  main .third-section .first-part .third-section_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 14% 0 14%;
+  }
+  main .third-section .first-part .third-section_text .button-see-more {
+    margin-bottom: 4%;
+  }
+  main .third-section .first-part #false-video {
+    width: 80%;
+  }
+  main .customers-review-section {
+    display: flex;
+    justify-content: center;
+    max-width: fit-content;
+  }
+  main .customers-review-section .content-reviews-grouping .text-review-section #right-drop {
+    bottom: 0;
+  }
+  main .customers-review-section .content-reviews-grouping .customers-reviews {
+    background-color: blue;
+    width: 80%;
+  }
+  main .customers-review-section .content-reviews-grouping .customers-reviews .customers {
+    width: 500px;
+  }
+  main .customers-review-section #left-button-position {
+    display: none;
+  }
+  main .customers-review-section #right-button-position {
+    display: none;
+  }
+  footer .total-footer {
+    flex-direction: column;
+  }
+  footer #social-network-group {
+    width: 40%;
   }
 }
 
