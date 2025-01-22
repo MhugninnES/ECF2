@@ -255,10 +255,13 @@ main .third-section .arrow-right-selected {
 main .partner-section {
   background-color: #f7f7fa;
   display: flex;
-  justify-content: center;
-  gap: 50px;
+  justify-content: space-between;
+  gap: 100px;
   overflow-x: scroll;
-  padding: 60px 0 60px 0;
+  padding: 60px 60px 60px 60px;
+}
+main .partner-section::-webkit-scrollbar {
+  display: none;
 }
 main .customers-review-section {
   display: flex;
@@ -340,9 +343,99 @@ main .customers-review-section #left-button-position {
 main .customers-review-section #right-button-position {
   margin-right: 4%;
 }
-
-footer h6 {
-  font-family: "Courier New", Courier, monospace;
+main .case-study-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-color: #F7F7FA;
+}
+main .case-study-section #arrow-deco {
+  position: absolute;
+  top: -6%;
+  left: 10%;
+}
+main .case-study-section #arrow-deco-reversed {
+  position: absolute;
+  top: -8%;
+  right: 10%;
+}
+main .case-study-section .title-case-study {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 10% 0 10%;
+  text-align: center;
+}
+main .case-study-section .title-case-study img {
+  margin: 40% 0 4% 0;
+}
+main .case-study-section .title-case-study h4 {
+  font-size: 35px;
+  line-height: 54px;
+  font-weight: 300;
+  margin: 0 0 38% 0;
+}
+main .case-study-section #blue-study-text {
+  background-color: #F1F2FF;
+}
+main .case-study-section #green-study-text {
+  background-color: #F0FFF7;
+}
+main .case-study-section #pink-study-text {
+  background-color: #FFF4F4;
+}
+main .case-study-section .flex-study-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 18% 4% 18%;
+  border-radius: 30px;
+}
+main .case-study-section .text-case-study {
+  margin: 0 10% 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-between;
+}
+main .case-study-section .text-case-study h4 {
+  font-size: 28px;
+  margin: 0 0 5% 0;
+}
+main .case-study-section .text-case-study p {
+  font-size: 14px;
+  margin: 0 0 10% 0;
+}
+main .case-study-section .text-case-study a {
+  text-decoration: none;
+  color: #2b2b2b;
+  background: linear-gradient(225deg, #F76680 0%, #57007B 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 14px;
+}
+main .case-study-section #read-more-case {
+  background: linear-gradient(225deg, #F76680 0%, #57007B 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0 18% 10% 0;
+}
+main .case-study-section #read-more-case img {
+  height: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
