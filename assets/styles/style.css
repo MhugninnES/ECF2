@@ -29,20 +29,6 @@ header nav {
   opacity: 0px;
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.08);
 }
-header nav .logo-text-site {
-  text-decoration: none;
-  color: #2b2b2b;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 10px;
-  margin: 0 0 0 20px;
-}
-header nav .logo-text-site span {
-  font-family: "Inspiration", serif;
-  font-weight: 400;
-  font-style: normal;
-}
 header nav div {
   display: flex;
   justify-content: space-between;
@@ -438,7 +424,7 @@ main .case-study-section #read-more-case img {
   height: 16px;
 }
 main .section-development-approach {
-  background-color: #d8d8d8;
+  background-color: rgba(249, 249, 255, 0.6509803922);
 }
 main .section-development-approach .development-title {
   display: flex;
@@ -527,6 +513,124 @@ main .section-development-approach .development-approach-presentation .developme
 }
 main .section-development-approach .development-approach-presentation .development-box .development-text #padlock-text-color {
   color: #57007B;
+}
+main .last-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10%;
+  position: relative;
+  background: linear-gradient(225deg, #F1F1F5 0%, #E4ECF7 100%);
+  margin: 4% 18% 4% 18%;
+  padding: 6% 0 6% 0;
+}
+main .last-section h6 {
+  font-size: 35px;
+  line-height: 55px;
+}
+main .last-section .button-decoration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .last-section .button-decoration #decoration-button {
+  position: absolute;
+}
+
+footer {
+  background-color: #ededed;
+}
+footer .total-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 100px;
+  margin: 0 10% 4% 10%;
+  padding-top: 2%;
+}
+footer .total-footer .logo-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  gap: 20px;
+  width: 33%;
+  max-width: 33%;
+}
+footer .total-footer .logo-flex .logo-text-site {
+  margin: 0;
+}
+footer .total-footer .logo-flex p {
+  font-size: 18px;
+  max-width: 460px;
+  line-height: 30px;
+}
+footer .total-footer .logo-flex #google-png {
+  max-width: 200px;
+  max-height: 60px;
+}
+footer .total-footer .links-flex {
+  width: 33%;
+  max-width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .total-footer .links-flex ul {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 20px;
+  list-style: none;
+}
+footer .total-footer .contact-us-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  gap: 20px;
+  width: 33%;
+  max-width: 33%;
+}
+footer .total-footer .contact-us-flex p {
+  font-size: 18px;
+  line-height: 30px;
+}
+footer .total-footer #social-network-group {
+  align-self: flex-end;
+}
+footer span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 14px;
+}
+
+.logo-text-site {
+  text-decoration: none;
+  color: #2b2b2b;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 0 20px;
+}
+.logo-text-site span {
+  font-family: "Inspiration", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media screen and (max-width: 1023px) {
+  header .first-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  header .first-section p {
+    text-align: center;
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
