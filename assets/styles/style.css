@@ -303,7 +303,7 @@ main .customers-review-section .content-reviews-grouping .text-review-section #r
 }
 main .customers-review-section .content-reviews-grouping .customers-reviews {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   min-width: 250px;
@@ -315,7 +315,8 @@ main .customers-review-section .content-reviews-grouping .customers-reviews .cus
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 20%;
+  min-width: 200px;
+  width: 200px;
   height: 200px;
 }
 main .customers-review-section .content-reviews-grouping .customers-reviews .customers .stars {
@@ -562,7 +563,6 @@ footer .total-footer .logo-flex {
   align-items: space-between;
   gap: 20px;
   width: 33%;
-  max-width: 33%;
 }
 footer .total-footer .logo-flex .logo-text-site {
   margin: 0;
@@ -681,8 +681,7 @@ footer span {
     bottom: 0;
   }
   main .customers-review-section .content-reviews-grouping .customers-reviews {
-    background-color: blue;
-    width: 80%;
+    width: 90%;
   }
   main .customers-review-section .content-reviews-grouping .customers-reviews .customers {
     width: 500px;
@@ -693,10 +692,70 @@ footer span {
   main .customers-review-section #right-button-position {
     display: none;
   }
-  footer .total-footer {
+  main .case-study-section #arrow-deco {
+    height: 8%;
+    top: -3%;
+  }
+  main .case-study-section #arrow-deco-reversed {
+    height: 8%;
+    top: -3%;
+  }
+  main .case-study-section .flex-study-text {
     flex-direction: column;
   }
-  footer #social-network-group {
+  main .case-study-section .flex-study-text .text-case-study {
+    margin: 4% 2% 2% 2%;
+  }
+  main .case-study-section #read-more-case {
+    margin: 0 12% 4% 0;
+  }
+  main .section-development-approach .development-approach-presentation {
+    margin: 0;
+    gap: 30px;
+  }
+  main .section-development-approach .development-approach-presentation .development-box {
+    width: 50%;
+  }
+  main .section-development-approach .development-approach-presentation .development-box .development-text h5 {
+    margin: 0 0 4% 0;
+  }
+  main .last-section {
+    margin: 6% 0 6% 0;
+    padding: 8% 0 8% 0;
+  }
+  main .last-section h6 {
+    text-align: center;
+    font-size: 22px;
+  }
+  footer .total-footer {
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 10%;
+  }
+  footer .total-footer .logo-flex {
+    width: 500px;
+    gap: 20px;
+    padding: 0 10% 0 10%;
+  }
+  footer .total-footer .logo-flex .logo-text-site {
+    align-self: center;
+  }
+  footer .total-footer .logo-flex #google-png {
+    align-self: center;
+  }
+  footer .total-footer .logo-flex .logo-text-site img {
+    width: 40px;
+    height: 40px;
+  }
+  footer .total-footer .links-flex {
+    padding-left: 8%;
+  }
+  footer .total-footer .contact-us-flex {
+    padding-right: 8%;
+  }
+  footer .total-footer #social-network-group {
+    padding: 0 30% 0 30%;
     width: 40%;
   }
 }

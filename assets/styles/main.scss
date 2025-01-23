@@ -370,7 +370,7 @@ main{
 
             .customers-reviews{
                 display:flex;
-                justify-content: space-between;
+                justify-content: center;
                 align-items: center;
                 flex-direction: row;
                 min-width: 250px;
@@ -379,7 +379,8 @@ main{
                 
                 .customers{
                     @include centerItem(column);
-                    width:20%;
+                    min-width:200px;
+                    width:200px;
                     height: 200px;
 
                     .stars{
@@ -607,7 +608,6 @@ footer{
             align-items: space-between;
             gap: 20px;
             width: 33%;
-            max-width: 33%;
 
             .logo-text-site{
                 margin:0;
@@ -756,8 +756,7 @@ footer{
                 }
 
                 .customers-reviews{
-                    background-color: blue;
-                    width:80%;
+                    width:90%;
 
                     .customers{
                         width:500px;
@@ -772,17 +771,98 @@ footer{
             }
         }
 
+        .case-study-section{
+            #arrow-deco{
+                height: 8%;
+                top:-3%;
+            }
+            #arrow-deco-reversed{
+                height: 8%;
+                top: -3%;
+            }
+
+            .flex-study-text{
+                flex-direction:column;
+
+                .text-case-study{
+                    margin:4% 2% 2% 2%;
+                }
+            }
+
+            #read-more-case{
+                margin: 0 12% 4% 0;
+            }
+        }
+
+        .section-development-approach{
+            .development-approach-presentation{
+                margin:0;
+                gap:30px;
+                .development-box{
+                    width:50%;
+
+                    .development-text{
+                        h5{margin:0 0 4% 0;}
+                    }
+                }
+            }
+        }
+
+        .last-section{
+            margin:6% 0 6% 0;
+            padding: 8% 0 8% 0;
+            h6{
+                text-align: center;
+                font-size:22px;
+            }
+        }
+
     }
     footer{
         .total-footer{
-            flex-direction: column;;
-        }
-        #social-network-group{
-            width:40%;
+            // flex-direction: column;
+            align-items:center;
+            flex-wrap: wrap;
+            margin:0;
+            padding: 10%;
+
+            .logo-flex{
+                width:500px;
+                gap:20px;
+                padding: 0 10% 0 10%;
+
+                .logo-text-site{
+                    align-self: center;
+                }
+
+                #google-png{
+                    align-self: center;
+                }
+
+                .logo-text-site{
+                    img{
+                        width:40px;
+                        height: 40px;
+                    }
+                }
+            }
+
+            .links-flex{
+                padding-left: 8%
+            }
+
+            .contact-us-flex{
+                padding-right:8%;
+            }
+
+            #social-network-group{
+                padding: 0 30% 0 30%;
+                width:40%;
+            }
         }
     }
 }
 
 @media screen and (max-width:768px){
-
+    
 }
