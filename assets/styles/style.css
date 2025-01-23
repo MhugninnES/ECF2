@@ -19,8 +19,9 @@ body h1 {
 
 header nav {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
   max-height: 80px;
   width: Fixed 1, 440px;
   height: Hug 79px;
@@ -33,6 +34,7 @@ header nav div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   gap: 50px;
 }
 header nav div a {
@@ -49,6 +51,7 @@ header nav .contact-us-button {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   margin: 5px 20px 5px 0;
   height: 50px;
   width: 124px;
@@ -57,17 +60,17 @@ header nav .contact-us-button {
 }
 header .first-section {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   margin: 5% 20% 8% 20%;
   padding: 0;
 }
 header .first-section .first-section-text {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  flex-direction: column;
   gap: 75px;
 }
 header .first-section .first-section-text h1 {
@@ -99,6 +102,7 @@ header .first-section .first-section-text .button-call-to-action {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   background: #3d63ea;
   padding: 16px 20px 16px 20px;
   font-size: 14px;
@@ -122,9 +126,10 @@ main .second-section h2 {
 }
 main .second-section .card-agencement {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  margin: 0 2% 2% 2%;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 2% 2% 2%;
   overflow-x: scroll;
 }
 main .second-section .card-agencement .card-carousel:hover {
@@ -160,6 +165,9 @@ main .second-section .card-agencement .card-carousel img {
   padding: 10px;
   margin-bottom: 14px;
 }
+main .second-section .card-agencement::-webkit-scrollbar {
+  display: none;
+}
 main .second-section .carousel-node-pages {
   display: flex;
   justify-content: center;
@@ -184,9 +192,9 @@ main .third-section .half-circle {
 }
 main .third-section .first-part {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   margin: 0 12% 0 12%;
   gap: 16%;
 }
@@ -237,6 +245,8 @@ main .third-section .second-part .second-part_text img {
 main .third-section .arrow-right-selected {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
   gap: 20px;
   margin: 0 80px 30px 0;
 }
@@ -263,11 +273,11 @@ main .customers-review-section .content-reviews-grouping {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0 16% 0 16%;
-  width: 100%;
+  margin: 0;
+  width: 80%;
 }
 main .customers-review-section .content-reviews-grouping .text-review-section {
-  margin: 0 10% 4% 10%;
+  margin: 0 8% 4% 8%;
   position: relative;
 }
 main .customers-review-section .content-reviews-grouping .text-review-section .title-review-section {
@@ -331,12 +341,6 @@ main .customers-review-section .content-reviews-grouping .customers-reviews img 
 main .customers-review-section .content-reviews-grouping .customers-reviews::-webkit-scrollbar {
   display: none;
 }
-main .customers-review-section #left-button-position {
-  margin-left: 4%;
-}
-main .customers-review-section #right-button-position {
-  margin-right: 4%;
-}
 main .case-study-section {
   display: flex;
   justify-content: center;
@@ -390,11 +394,11 @@ main .case-study-section .flex-study-text {
   border-radius: 30px;
 }
 main .case-study-section .text-case-study {
-  margin: 0 10% 0 10%;
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   align-items: space-between;
+  flex-direction: column;
+  margin: 0 10% 0 10%;
 }
 main .case-study-section .text-case-study h4 {
   font-size: 28px;
@@ -414,6 +418,7 @@ main .case-study-section .text-case-study a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  flex-direction: row;
   font-size: 14px;
 }
 main .case-study-section #read-more-case {
@@ -421,9 +426,10 @@ main .case-study-section #read-more-case {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  align-self: flex-end;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
   font-size: 20px;
   text-decoration: none;
   margin: 0 18% 10% 0;
@@ -460,8 +466,8 @@ main .section-development-approach .development-approach-presentation .developme
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-direction: row;
   background-color: #F7F7FA;
-  max-width: 40%;
   border: 1px solid #E7DAED;
   width: 600px;
   height: 200px;
@@ -526,6 +532,7 @@ main .last-section {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: row;
   height: 10%;
   position: relative;
   background: linear-gradient(225deg, #F1F1F5 0%, #E4ECF7 100%);
@@ -540,6 +547,7 @@ main .last-section .button-decoration {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 main .last-section .button-decoration #decoration-button {
   position: absolute;
@@ -552,15 +560,16 @@ footer .total-footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-direction: row;
   gap: 100px;
   margin: 0 10% 4% 10%;
   padding-top: 2%;
 }
 footer .total-footer .logo-flex {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: space-between;
+  flex-direction: column;
   gap: 20px;
   width: 33%;
 }
@@ -578,26 +587,25 @@ footer .total-footer .logo-flex #google-png {
 }
 footer .total-footer .links-flex {
   width: 33%;
-  max-width: 33%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 footer .total-footer .links-flex ul {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: space-between;
+  flex-direction: column;
   gap: 20px;
   list-style: none;
 }
 footer .total-footer .contact-us-flex {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: space-between;
+  flex-direction: column;
   gap: 20px;
   width: 33%;
-  max-width: 33%;
 }
 footer .total-footer .contact-us-flex p {
   font-size: 18px;
@@ -620,6 +628,7 @@ footer span {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-direction: row;
   gap: 10px;
   margin: 0 0 0 20px;
 }
@@ -634,9 +643,10 @@ footer span {
     display: none;
   }
   header .first-section {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   header .first-section .first-section-text {
     justify-content: center;
@@ -661,9 +671,9 @@ footer span {
   }
   main .third-section .first-part .third-section_text {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    flex-direction: column;
     margin: 0 14% 0 14%;
   }
   main .third-section .first-part .third-section_text .button-see-more {
@@ -757,6 +767,123 @@ footer span {
   footer .total-footer #social-network-group {
     padding: 0 30% 0 30%;
     width: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .first-section img {
+    width: 320px;
+    height: 320px;
+  }
+  header .half-circle {
+    width: 40px;
+  }
+  main .second-section {
+    padding-bottom: 10%;
+  }
+  main .second-section h2 {
+    padding: 6% 0 6% 0;
+  }
+  main .second-section .card-agencement {
+    margin: 0 0 6% 0;
+  }
+  main .second-section .carousel-node-pages {
+    justify-content: space-around;
+  }
+  main .second-section .carousel-node-pages img {
+    width: 20%;
+  }
+  main .second-section .carousel-node-pages #node-carousel {
+    width: 50%;
+  }
+  main .third-section {
+    padding: 20% 0 0 0;
+  }
+  main .third-section .half-circle {
+    width: 40px;
+  }
+  main .third-section .first-part .third-section_text .button-see-more a {
+    font-size: 15px;
+  }
+  main .third-section .arrow-right-selected img {
+    width: 36px;
+  }
+  main .customers-review-section {
+    padding: 0 0 20% 0;
+  }
+  main .case-study-section #arrow-deco {
+    height: 8%;
+    top: -2%;
+    left: 6%;
+    width: 20%;
+    height: 4%;
+  }
+  main .case-study-section #arrow-deco-reversed {
+    height: 8%;
+    top: -2%;
+    right: 6%;
+    width: 20%;
+    height: 4%;
+  }
+  main .case-study-section .title-case-study img {
+    margin: 0;
+  }
+  main .case-study-section .title-case-study h4 {
+    font-size: 24px;
+    margin-bottom: 6%;
+  }
+  main .case-study-section .flex-study-text {
+    margin-bottom: 6%;
+  }
+  main .case-study-section .flex-study-text img {
+    width: 320px;
+  }
+  main .case-study-section .flex-study-text .text-case-study a img {
+    width: 20px;
+  }
+  main .case-study-section #read-more-case {
+    font-size: 16px;
+    margin-bottom: 6%;
+  }
+  main .section-development-approach {
+    padding-bottom: 6%;
+  }
+  main .section-development-approach .development-approach-presentation {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 10px;
+  }
+  main .section-development-approach .development-approach-presentation .development-box {
+    width: 98%;
+  }
+  main .section-development-approach .development-approach-presentation .development-box p {
+    margin: 0 0 0 0;
+  }
+  main .last-section {
+    flex-direction: column;
+    padding-bottom: 24%;
+    gap: 60px;
+  }
+  footer .total-footer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+  footer .total-footer .logo-flex {
+    width: 100%;
+  }
+  footer .total-footer .links-flex {
+    padding: 0;
+    width: 100%;
+  }
+  footer .total-footer .contact-us-flex {
+    width: 100%;
+  }
+  footer .total-footer #social-network-group {
+    justify-content: center;
+  }
+  footer span {
+    text-align: center;
   }
 }
 

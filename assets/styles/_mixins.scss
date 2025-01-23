@@ -1,0 +1,41 @@
+@mixin baseColorNoDeco(){
+    text-decoration: none;
+    color:$base-text-color;
+}
+
+@mixin basicButton(){
+    border: solid 1px $base-text-color;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+@mixin gradientText($gradient){
+    background:$gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin centerItem($direction:row){
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin halfCirclePosition($top, $left){
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: -1;
+    top: $top;
+    left: $left;
+}
+
+//Create flex box with parameters in order from direction to justify and align
+@mixin flexBox($direction:row, $justify:center, $align:center){
+    display:flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
