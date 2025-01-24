@@ -69,6 +69,10 @@ header{
             padding: 0 25px;
             background: linear-gradient(225deg, #6675F7 0%, #57007B 100%);
         }
+
+        #burger-menu{
+            display:none;
+        }
     }
 
     .first-section{
@@ -612,7 +616,21 @@ footer{
 @media screen and (max-width:1023px){
     header{
         nav{
-            display:none;
+            height: 60px;
+            div{
+                display:none;
+            }
+            .contact-us-button{
+                display:none;
+            }
+            #burger-menu{
+                display:block;
+                margin-right: 20px;
+            }
+
+            #burger-menu::hover{
+                cursor:pointer;
+            }
         }
             .first-section{
                 @include flexBox(column, center, center);
@@ -713,12 +731,14 @@ footer{
         .section-development-approach{
             .development-approach-presentation{
                 margin:0;
+                flex:1;
                 gap:30px;
                 .development-box{
-                    width:50%;
+                    width:80%;
 
                     .development-text{
                         h5{margin:0 0 4% 0;}
+                        p{margin-right:4%;}
                     }
                 }
             }
@@ -781,6 +801,9 @@ footer{
 
 @media screen and (max-width:768px){
         header{
+            nav{
+                
+            }
             .first-section{
                 .first-section-text{
                 }
@@ -834,6 +857,7 @@ footer{
                 }
 
                 .arrow-right-selected{
+                    margin-top:16px;
                     img{
                         width:36px;
                     }
@@ -841,26 +865,27 @@ footer{
             }
 
             .customers-review-section{
-                padding:0 0 20% 0;
+                padding:6% 0 20% 0;
+
             }
             
             .case-study-section{
                 #arrow-deco{
                     height: 8%;
                     top:-2%;
-                    left:6%;
-                    width:20%;
-                    height:4%;
+                    left:14%;
+                    width: 16%;
+                    height:6%;
                 }
                 #arrow-deco-reversed{
-                    height: 8%;
                     top: -2%;
-                    right:6%;
-                    width:20%;
-                    height:4%;
+                    right:14%;
+                    width:16%;
+                    height:6%;
                 }
 
                 .title-case-study{
+                    padding-top:6%;
                     img{
                         margin:0;
                     }
@@ -894,7 +919,7 @@ footer{
                     flex-direction: column;
                     align-items: center;
                     padding:0;
-                    gap:10px;
+                    gap:30px;
 
                     .development-box{
                         width:98%;

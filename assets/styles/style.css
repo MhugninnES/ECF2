@@ -58,6 +58,9 @@ header nav .contact-us-button {
   padding: 0 25px;
   background: linear-gradient(225deg, #6675F7 0%, #57007B 100%);
 }
+header nav #burger-menu {
+  display: none;
+}
 header .first-section {
   display: flex;
   justify-content: space-between;
@@ -640,7 +643,20 @@ footer span {
 
 @media screen and (max-width: 1023px) {
   header nav {
+    height: 60px;
+  }
+  header nav div {
     display: none;
+  }
+  header nav .contact-us-button {
+    display: none;
+  }
+  header nav #burger-menu {
+    display: block;
+    margin-right: 20px;
+  }
+  header nav #burger-menu::hover {
+    cursor: pointer;
   }
   header .first-section {
     display: flex;
@@ -721,13 +737,17 @@ footer span {
   }
   main .section-development-approach .development-approach-presentation {
     margin: 0;
+    flex: 1;
     gap: 30px;
   }
   main .section-development-approach .development-approach-presentation .development-box {
-    width: 50%;
+    width: 80%;
   }
   main .section-development-approach .development-approach-presentation .development-box .development-text h5 {
     margin: 0 0 4% 0;
+  }
+  main .section-development-approach .development-approach-presentation .development-box .development-text p {
+    margin-right: 4%;
   }
   main .last-section {
     margin: 6% 0 6% 0;
@@ -804,25 +824,30 @@ footer span {
   main .third-section .first-part .third-section_text .button-see-more a {
     font-size: 15px;
   }
+  main .third-section .arrow-right-selected {
+    margin-top: 16px;
+  }
   main .third-section .arrow-right-selected img {
     width: 36px;
   }
   main .customers-review-section {
-    padding: 0 0 20% 0;
+    padding: 6% 0 20% 0;
   }
   main .case-study-section #arrow-deco {
     height: 8%;
     top: -2%;
-    left: 6%;
-    width: 20%;
-    height: 4%;
+    left: 14%;
+    width: 16%;
+    height: 6%;
   }
   main .case-study-section #arrow-deco-reversed {
-    height: 8%;
     top: -2%;
-    right: 6%;
-    width: 20%;
-    height: 4%;
+    right: 14%;
+    width: 16%;
+    height: 6%;
+  }
+  main .case-study-section .title-case-study {
+    padding-top: 6%;
   }
   main .case-study-section .title-case-study img {
     margin: 0;
@@ -851,7 +876,7 @@ footer span {
     flex-direction: column;
     align-items: center;
     padding: 0;
-    gap: 10px;
+    gap: 30px;
   }
   main .section-development-approach .development-approach-presentation .development-box {
     width: 98%;
