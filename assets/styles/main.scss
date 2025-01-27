@@ -36,21 +36,6 @@ header{
         opacity: 0px;
         box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.08);
 
-        // .logo-text-site{
-        //     @include baseColorNoDeco();
-
-        //     display:flex;
-        //     justify-content: flex-start;
-        //     align-items:center;
-        //     gap: 10px;
-        //     margin: 0 0 0 20px;
-        //     span{
-        //         font-family: "Inspiration", serif;
-        //         font-weight: 400;
-        //         font-style: normal;
-        //     }
-        // }
-
         div{
             @include flexBox(row, space-between, center);
             gap:50px;
@@ -105,9 +90,6 @@ header{
                 @include baseColorNoDeco();
                 @include basicButton();
                 @include flexBox();
-                // display: flex;
-                // justify-content: center;
-                // align-items: center;
                 background: #3d63ea;
                 padding: 16px 20px 16px 20px;
                 font-size: 14px;
@@ -269,11 +251,7 @@ main{
         justify-content: space-between;
         gap: 100px;
         overflow-x: scroll;
-        padding: 60px 60px 60px 60px;
-
-        img{
-            // width: 200px;
-        }
+        padding: 60px;
     }
 
     .partner-section::-webkit-scrollbar{
@@ -352,13 +330,6 @@ main{
             .customers-reviews::-webkit-scrollbar{
                 display:none;
             }
-        }
-
-        #left-button-position{
-            // margin-left: 4%
-        }
-        #right-button-position{
-            // margin-right: 4%;
         }
     }
 
@@ -801,12 +772,7 @@ footer{
 
 @media screen and (max-width:768px){
         header{
-            nav{
-                
-            }
             .first-section{
-                .first-section-text{
-                }
                 img{
                     width: 320px;
                     height: 320px;

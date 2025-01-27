@@ -10,6 +10,7 @@
     border-radius: 5px;
 }
 
+//Create gradient text
 @mixin gradientText($gradient){
     background:$gradient;
     background-clip: text;
@@ -24,6 +25,7 @@
     flex-direction: $direction;
 }
 
+//Create an half-circle with parameters in order from top and left to ajust their position
 @mixin halfCirclePosition($top, $left){
     position: absolute;
     transform: translateY(-50%);
